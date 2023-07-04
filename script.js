@@ -1,5 +1,7 @@
 class View {
     constructor(){
+        document.title = 'Задача 4.3.7';
+
         this.app = document.querySelector('.app');
 
         this.title = this.createElement('h1', 'title');
