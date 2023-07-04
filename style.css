@@ -69,6 +69,7 @@
     padding-left: 15px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -77,7 +78,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.cross {cursor: pointer; position: absolute; top: 50%; right: 80px;}
-.cross:before, .cross:after {content: ""; position: absolute; width: 60px; height: 4px; background: #FF0000;}
+.cross {
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+    margin-right: 30px;
+    }
+
+.cross:before, .cross:after {
+    top: 50%;
+    content: ""; 
+    position: absolute; 
+    width: 60px; 
+    height: 4px; 
+    background: #FF0000;
+}
+
 .cross:before {transform: rotate(45deg);}
 .cross:after {transform: rotate(-45deg);}
