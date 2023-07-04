@@ -50,9 +50,9 @@
     box-sizing: border-box;
 }
 
-.autocomplete {
+/* .autocomplete {
     height: 240px;
-}
+} */
 
 .bookmarks {
     display: flex;
