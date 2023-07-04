@@ -47,14 +47,12 @@ class View {
 
         userElement.addEventListener('click', ()=> {
             this.addRepoData(userData.name , userData.owner.login, userData.stargazers_count);
-
-
         });
     }
 
     addRepoData(name, owner, stars){
-        console.log(name, owner, stars);
-        this.usersList.innerHTML = '';
+        //console.log(name, owner, stars);
+        this.usersList.textContent = '';
         this.searchCounter.textContent = 'начните вводить название репозитория';
         this.searchInput.value = '';
 
@@ -122,7 +120,7 @@ class Search {
 
     }
     clearUsers() {
-        this.view.usersList.innerHTML = '';
+        this.view.usersList.textContent = '';
         this.view.searchCounter.textContent = 'начните вводить название репозитория';
     }
 
